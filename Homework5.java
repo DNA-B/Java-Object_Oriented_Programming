@@ -1,26 +1,3 @@
-class Monitor {
-    private String monitorSize;
-    private String color;
-    private String power;
-
-    Monitor(String monitorSize, String color, String power) {
-        this.monitorSize = monitorSize;
-        this.color = color;
-        this.power = power;
-    }
-
-    public void turnOn() {
-        System.out.println("Turning on the monitor.");
-    }
-
-    public void printInfo() {
-        System.out.println("The spec of the monitor");
-        System.out.printf(" Size: %s\n", this.monitorSize);
-        System.out.printf(" Color: %s\n", this.color);
-        System.out.printf(" Power: %s\n", this.power);
-    }
-}
-
 class Computer {
     private String cpu;
     private String memory;
@@ -50,6 +27,29 @@ class Computer {
     }
 }
 
+class Monitor {
+    private String monitorSize;
+    private String color;
+    private String power;
+
+    Monitor(String monitorSize, String color, String power) {
+        this.monitorSize = monitorSize;
+        this.color = color;
+        this.power = power;
+    }
+
+    public void turnOn() {
+        System.out.println("Turning on the monitor.");
+    }
+
+    public void printInfo() {
+        System.out.println("The spec of the monitor");
+        System.out.printf(" Size: %s\n", this.monitorSize);
+        System.out.printf(" Color: %s\n", this.color);
+        System.out.printf(" Power: %s\n", this.power);
+    }
+}
+
 class PersonalComputer {
     private Computer computer;
     private Monitor monitor;
@@ -72,8 +72,8 @@ class PersonalComputer {
 
 public class Homework5 {
     public static void main(String[] args) {
-        Monitor monitor = new Monitor("32 inch", "Black", "45W");
         Computer computer = new Computer("Core i7", "32GB", "2TB", "White", "700W");
+        Monitor monitor = new Monitor("32 inch", "Black", "45W");
         PersonalComputer pc = new PersonalComputer(computer, monitor);
 
         pc.turnOn();
