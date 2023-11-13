@@ -14,11 +14,6 @@ class Course {
     public String getName() {
         return name;
     }
-
-    @Override
-    public String toString() {
-        return "Code: " + code + ", Name: " + name;
-    }
 }
 
 class OnlineCourse extends Course {
@@ -28,7 +23,7 @@ class OnlineCourse extends Course {
 
     @Override
     public String toString() {
-        return "Code: " + super.getCode() + ", Name: " + super.getName() + ", Type: Online";
+        return "Code: " + getCode() + ", Name: " + getName() + ", Type: Online";
     }
 }
 
@@ -39,7 +34,7 @@ class OfflineCourse extends Course {
 
     @Override
     public String toString() {
-        return "Code: " + super.getCode() + ", Name: " + super.getName() + ", Type: Offline";
+        return "Code: " + getCode() + ", Name: " + getName() + ", Type: Offline";
     }
 }
 
