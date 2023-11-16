@@ -29,7 +29,7 @@ abstract class Printer {
         this.availableCount = availableCount;
     }
 
-    abstract public boolean print();
+    public abstract boolean print();
 }
 
 class InkjetPrinter extends Printer {
@@ -37,6 +37,7 @@ class InkjetPrinter extends Printer {
         super(model, availableCount);
     }
 
+    @Override
     public boolean print() {
         if (getAvailableCount() >= 1) {
             setPrintedCount(getPrintedCount() + 1);
@@ -55,6 +56,7 @@ class LaserPrinter extends Printer {
         super(model, availableCount);
     }
 
+    @Override
     public boolean print() {
         if (getAvailableCount() >= 1) {
             setPrintedCount(getPrintedCount() + 1);
