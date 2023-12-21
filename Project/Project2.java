@@ -1,4 +1,7 @@
-package Project;// 계란찜 - 200초 & 700W, 라면끓이기 - 300초 & 1000W, 감자삶기 - 600초 & 700W
+// Microwave Implementation Project
+package Project;
+
+// 계란찜 - 200초 & 700W, 라면끓이기 - 300초 & 1000W, 감자삶기 - 600초 & 700W
 // 1. 계란찜, 2. 라면끓이기, 3. 감자삶기, 4. 시간(초) 설정, 5. 소비 전력(W) 설정, 6. 조리 시작, 기타. 종료
 
 import java.util.Scanner;
