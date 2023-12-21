@@ -1,3 +1,5 @@
+package Homework
+
 abstract class Printer {
     private String model;
     private int printedCount;
