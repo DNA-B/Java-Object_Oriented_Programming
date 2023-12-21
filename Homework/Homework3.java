@@ -1,3 +1,5 @@
+pacakge Homework
+    
 import java.util.Scanner;
 
 public class Homework3 {
