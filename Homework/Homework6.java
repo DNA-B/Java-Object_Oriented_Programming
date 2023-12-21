@@ -1,3 +1,5 @@
+package Homework
+
 class Course {
     private String code;
     private String name;
