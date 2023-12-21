@@ -1,3 +1,5 @@
+package Homework
+
 class Computer {
     private String cpu;
     private String memory;
